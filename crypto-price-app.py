@@ -50,7 +50,7 @@ def load_data(currency):
     else:
         pos = 1
     for i in listings:
-        coin_name.append(i["name"])
+        coin_name.append(i["slug"])
         coin_symbol.append(i["symbol"])
         market_cap.append(i["quotes"][pos]["marketCap"])
         percent_change_1h.append(i["quotes"][pos]["percentChange1h"])
